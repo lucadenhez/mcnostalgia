@@ -123,7 +123,7 @@ section li {
 #wrap { min-height: 100%; width: 100%;}
 
 body {
-    background:#111 url(/mcnostlagia/imgs/bg_main.png);
+    background:#111 url(/mcnostalgia/imgs/bg_main.png);
 }
 
 body:before {
@@ -136,7 +136,7 @@ body:before {
 
 header {
     height: 48px;
-    background: #211710 url(/mcnostlagia/imgs/bg_top.png);
+    background: #211710 url(/mcnostalgia/imgs/bg_top.png);
 }
 
 header a, header a:active, header a:visited {
@@ -155,7 +155,7 @@ p.error,
     left:144px;
     width:119px;
     height:62px;
-    background:transparent url(/mcnostlagia/imgs/prepurchase.png) no-repeat;
+    background:transparent url(/mcnostalgia/imgs/prepurchase.png) no-repeat;
 }
 
 #header_container {
@@ -167,7 +167,7 @@ p.error,
     float: left;
     width:260px;
     height:48px;
-    background: transparent url(/mcnostlagia/imgs/logo.png) no-repeat 0 1px;
+    background: transparent url(/mcnostalgia/imgs/logo.png) no-repeat 0 1px;
     display:block;
     overflow:hidden;
     text-indent:-10000px;
@@ -295,11 +295,11 @@ p.error,
 }
 
 .store .item#xbox {
-    background-image:url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/store/xbox.png);
+    background-image:url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/store/xbox.png);
 }
 
 .store .item#pocket {
-    background-image:url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/store/mcpe.png);
+    background-image:url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/store/mcpe.png);
     margin-left:12px;
 }
 
@@ -312,24 +312,24 @@ p.error,
 }
 
 .store .item#game {
-    background-image:url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/store/game.png);
+    background-image:url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/store/game.png);
 }
 
 .store .item#gift {
-    background-image:url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/store/gift.png);
+    background-image:url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/store/gift.png);
     margin-left:12px;
 }
 
 .store.three .item#game {
-    background-image:url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/store/game_s.png);
+    background-image:url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/store/game_s.png);
 }
 
 .store.three .item#gift {
-    background-image:url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/store/gift_s.png);
+    background-image:url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/store/gift_s.png);
     margin-left:11px;
 }
 .store.three .item#prepaid {
-    background-image:url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/store/prepaid_s.png);
+    background-image:url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/store/prepaid_s.png);
     margin-left:11px;
 }
 
@@ -403,21 +403,21 @@ section.social h2 {
     margin-bottom: 1em;
 }
 section.social#facebook h2 {
-    background-image:url(/mcnostlagia/imgs/facebook_icon.png);
+    background-image:url(/mcnostalgia/imgs/facebook_icon.png);
 }
 section.social.minecon-banner h2 {
-    background-image:url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/minecon_icon.png);
+    background-image:url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/minecon_icon.png);
 }
 section.social#twitter h2 {
-    background-image:url(/mcnostlagia/imgs/twitter_icon.png);
+    background-image:url(/mcnostalgia/imgs/twitter_icon.png);
 }
 section.social#tumblr h2 {
-    background-image:url(/mcnostlagia/imgs/tumblr_icon.png);
+    background-image:url(/mcnostalgia/imgs/tumblr_icon.png);
 }
 
 #animals {
     padding-top:230px;
-    background: transparent url(/mcnostlagia/imgs/animals.png) no-repeat top center;
+    background: transparent url(/mcnostalgia/imgs/animals.png) no-repeat top center;
     text-align:center;
 }
 
@@ -432,12 +432,12 @@ section.social#tumblr h2 {
 }
 
 .button_buy_now {
-    background-image: url(/mcnostlagia/imgs/buy_now.png);
+    background-image: url(/mcnostalgia/imgs/buy_now.png);
     width:212px;
     height:44px;
 }
 .button_download_now {
-    background-image: url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/download_now.png);
+    background-image: url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/download_now.png);
     width:212px;
     height:44px;
 }
@@ -594,7 +594,7 @@ a.tee {
     background-color:#ff0;
     width:630px;
     height:230px;
-    background:transparent url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/minecon_banner.png) no-repeat;
+    background:transparent url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/minecon_banner.png) no-repeat;
     overflow:hidden;
     text-indent: -1000px;
     margin-top:26px;
@@ -678,13 +678,13 @@ a.tee {
 }
 
 .prepaid {
-    background:transparent url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/minecraft_incomm_s.png) no-repeat;
+    background:transparent url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/minecraft_incomm_s.png) no-repeat;
     padding:0 0 0 95px;
     min-height:106px;
 }
 
 #prepaid {
-    background:transparent url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/store/minecraft_incomm_l.png) no-repeat right top;
+    background:transparent url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/store/minecraft_incomm_l.png) no-repeat right top;
     padding:0 304px 0 0;
     min-height:400px;
 }
@@ -707,7 +707,7 @@ a.tee {
 }
 
 #prepaid .find_store {
-    background-image: url(/mcnostlagia/web/20131125102107im_/https://minecraft.net/images/store/find.png);
+    background-image: url(/mcnostalgia/web/20131125102107im_/https://minecraft.net/images/store/find.png);
     width:98px;
     height:26px;
     display:block;
