@@ -1,0 +1,769 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { background:#111; font:13px/1.4 'Helvetica Neue', sans-serif; *font-size:small; }
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp, .code { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; }
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #71b147; color:#593d29; text-shadow: none; }
+::selection { background:#71b147; color:#593d29; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #5f9f35; }
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, textarea {  color: #E0D0D0; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: #aaf; text-decoration:none }
+
+html, body { height: 100%; }
+
+h1 {
+    font-size: 24px;
+}
+
+select {
+    padding:5px;
+    color:black;
+}
+
+option {
+    margin-bottom:8px;
+}
+
+h2 {
+    font-size:18px;
+    margin-top:2em;
+}
+
+h3 {
+    font-size:14px;
+    margin-top:2em;
+}
+
+h4 {
+    font-size:13px;
+    margin-top:2em;
+}
+
+p, ul, ol { margin-top:1.5em; }
+
+section li {
+    margin:0.67em 0;
+}
+
+.small {
+    font-size:11px;
+}
+
+.small a {
+    text-decoration:none;
+}
+
+.dark {
+    color:#777;
+}
+
+#wrap { min-height: 100%; width: 100%;}
+
+body {
+    background:#111 url(/imgs/bg_main.png);
+}
+
+body:before {
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;
+}
+
+header {
+    height: 48px;
+    background: #211710 url(/imgs/bg_top.png);
+}
+
+header a, header a:active, header a:visited {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p.error,
+.flash.error { background:transparent; color:#c22 }
+.flash.success { background:transparent; color:#5c2 }
+
+#beta_badge {
+    position:absolute;
+    top: -40px;
+    left:144px;
+    width:119px;
+    height:62px;
+    background:transparent url(/imgs/prepurchase.png) no-repeat;
+}
+
+#header_container {
+    width:1000px;
+    margin:0 auto;
+}
+
+#logo {
+    float: left;
+    width:260px;
+    height:48px;
+    background: transparent url(/imgs/logo.png) no-repeat 0 1px;
+    display:block;
+    overflow:hidden;
+    text-indent:-10000px;
+}
+
+#menu {
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding:14px 0 0;
+    width: 415px;
+    margin-top:0;
+    float: left;
+    margin-left: 0;
+}
+
+#menu li {
+    float:left;
+    margin-left:10px;
+}
+
+#menu li a, #menu li a:active, #menu li a:visited {
+    color:#fff;
+}
+
+#menu li ul {
+    margin:0;
+    padding:0;
+    position:absolute;
+    display:none;
+    z-index:5;
+    padding-top:6px;
+}
+
+#menu li ul li {
+    float:none;
+    margin:0;
+    display:inline;
+}
+
+#menu li ul li a {
+    display:block;
+    padding:6px 10px;
+    background:#333;
+    white-space:nowrap;
+}
+
+#menu li ul li a:hover {
+    background:#444;
+}
+
+#userbox {
+    width:300px;
+    text-align:right;
+    padding:14px 0 0;
+    float: left;
+}
+
+#main {
+    width:1000px;
+    margin: 0 auto;
+    margin-top:1em;
+    position: relative;
+    padding: 20px 0 40px;
+}
+
+.store {
+    margin-top:20px;
+}
+
+.store .item {
+    float:left;
+    margin-bottom:45px;
+    width:310px;
+    margin-right:30px;
+    text-align:center;
+}
+
+.store .item#game, .store .item#gift, .store .item#prepaid {
+    display:block;
+    width:434px;
+    padding:49px 40px 20px 20px;
+    height:145px;
+    background-color:#111;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin:0;
+    text-align:right;
+    color:#fff;
+    font-size:36px;
+    font-weight:bold;
+    text-shadow: #111 0px 3px 0px;
+    line-height:40px;
+    min-height:0;
+}
+
+.store.three .item#game, .store.three .item#gift, .store.three .item#prepaid {
+    width:266px;
+    height:101px;
+    font-size:20px;
+    line-height:24px;
+    padding:26px 30px 20px 30px;
+}
+
+.store .item#xbox, .store .item#pocket {
+    display:block;
+    width:434px;
+    padding:49px 40px 20px 20px;
+    height:48px;
+    background-color:#111;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin:8px 0 20px 0;
+    text-align:right;
+    color:#fff;
+    font-size:36px;
+    font-weight:bold;
+    text-shadow: #111 0px 3px 0px;
+    line-height:40px;
+}
+
+.store .item .pricetag {
+    color:#ffb400;
+    font-size:18px;
+}
+
+.store .item#xbox {
+    background-image:url(/web/20131125102107im_/https://minecraft.net/images/store/xbox.png);
+}
+
+.store .item#pocket {
+    background-image:url(/web/20131125102107im_/https://minecraft.net/images/store/mcpe.png);
+    margin-left:12px;
+}
+
+.store .item#game a, .store .item#gift a {
+    color:#ffb400;
+}
+
+.store .item#game a:hover, .store .item#gift a:hover {
+    color:#ffd571;
+}
+
+.store .item#game {
+    background-image:url(/web/20131125102107im_/https://minecraft.net/images/store/game.png);
+}
+
+.store .item#gift {
+    background-image:url(/web/20131125102107im_/https://minecraft.net/images/store/gift.png);
+    margin-left:12px;
+}
+
+.store.three .item#game {
+    background-image:url(/web/20131125102107im_/https://minecraft.net/images/store/game_s.png);
+}
+
+.store.three .item#gift {
+    background-image:url(/web/20131125102107im_/https://minecraft.net/images/store/gift_s.png);
+    margin-left:11px;
+}
+.store.three .item#prepaid {
+    background-image:url(/web/20131125102107im_/https://minecraft.net/images/store/prepaid_s.png);
+    margin-left:11px;
+}
+
+.store .item.last {
+    margin-right:0;
+}
+
+.warning {
+    text-align: center;
+    padding:6px;
+}
+
+.warning-red {
+    background-color:#fdd;
+}
+
+.warning-yellow {
+    background-color:#ffd;
+    color:#a80;
+    font-weight:bold;
+}
+
+footer {
+    position: relative;
+    margin-top: -40px; /* negative value of footer height */
+    height: 26px;
+    text-align: center;
+    color:#444;
+    padding-top: 14px;
+    clear:both;
+}
+
+footer a, footer a:visited {
+    color: #777;
+    text-decoration:none;
+}
+
+section, aside {
+    margin-bottom: 3em;
+}
+section.left {
+    width:640px;
+    float:left;
+}
+aside {
+    width:300px;
+    margin-left:40px;
+    float:left;
+}
+section.left.three_col {
+    width:300px;
+    float:left;
+}
+section.mid.three_col,section.right.three_col {
+    width:300px;
+    margin-left:40px;
+    float:left;
+}
+section.right.three_col.double {
+    width:640px;
+    margin-left:40px;
+    float:left;
+}
+section.social h2 {
+    font-size: 18px;
+    color:#fff;
+    padding-left:40px;
+    background-repeat: no-repeat;
+    padding-top:3px;
+    height:29px;
+    margin-bottom: 1em;
+}
+section.social#facebook h2 {
+    background-image:url(/imgs/facebook_icon.png);
+}
+section.social.minecon-banner h2 {
+    background-image:url(/web/20131125102107im_/https://minecraft.net/images/minecon_icon.png);
+}
+section.social#twitter h2 {
+    background-image:url(/imgs/twitter_icon.png);
+}
+section.social#tumblr h2 {
+    background-image:url(/imgs/tumblr_icon.png);
+}
+
+#animals {
+    padding-top:230px;
+    background: transparent url(/imgs/animals.png) no-repeat top center;
+    text-align:center;
+}
+
+.button {
+    text-indent: -10000px;
+    text-align: left;
+    overflow:hidden;
+    border:none;
+    outline:none;
+    background-repeat:no-repeat;
+    display:inline-block;
+}
+
+.button_buy_now {
+    background-image: url(/imgs/buy_now.png);
+    width:212px;
+    height:44px;
+}
+.button_download_now {
+    background-image: url(/web/20131125102107im_/https://minecraft.net/images/download_now.png);
+    width:212px;
+    height:44px;
+}
+
+.social h2 a {
+    color:#fff;
+    text-decoration:none;
+}
+
+.social>div {
+    margin-top:2em;
+}
+
+#twitter ul {
+    list-style-type: none;
+    text-indent: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#twitter li {
+    margin-bottom:2em;
+}
+
+#twitter li .timestamp {
+    font-size:10px;
+    color:#b1a5a5;
+}
+
+#twitter li a {
+    text-decoration: none;
+}
+
+#tumblr ul {
+    list-style-type: none;
+    text-indent: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#tumblr li {
+    margin-bottom:2em;
+}
+
+#tumblr .title {
+    font-weight:bold;
+    font-size:14px;
+}
+
+#tumblr li .timestamp {
+    font-size:10px;
+    color:#b1a5a5;
+}
+
+#tumblr li a {
+    text-decoration: none;
+}
+
+.total_users, .paid_users {
+    position:relative;
+    height:13px;
+}
+
+.platform {
+    display:none;
+}
+
+.infobox {
+    padding:10px;
+    background-color:#333;
+    border:#666 solid 1px;
+    margin:2em 0;
+    font-size:16px;
+}
+
+ul.infobox {
+    list-style-type:none;
+}
+
+ul.infobox li {
+    margin-bottom:1em;
+}
+
+.infobox .label {
+    text-transform:uppercase;
+    font-size:10px;
+    color:#AAA;
+}
+
+form.spacious input[type="text"], form.spacious input[type="password"], form.spacious input[type="file"] {
+    display:block;
+    font-size:18px;
+    margin-bottom:2px;
+}
+
+form.spacious label {
+    text-transform:uppercase;
+    font-size:10px;
+    color:#AAA;
+}
+
+.error, form.spacious p.hasError label {
+    color:#ff3333
+}
+
+form.standard span.error,
+form.standard label.error,
+form.standard div.error {
+    color:#c00;
+    font-weight:normal;
+    margin-top:6px;
+}
+
+form.standard input[type="text"], form.standard input[type="password"] {
+    color:#000;
+    background:#fff;
+}
+
+p.success {
+    color:#33ff33;
+}
+
+#redeemForm #code {
+    padding-left:30px;
+    font-size:48px;
+    font-family:monospace;
+}
+
+#redeemForm label {
+    font-size:18px;
+    font-weight:bold;
+}
+
+a.tee {
+    display:block;
+    background:#111 none no-repeat center 10px;
+    width:221px;
+    height:20px;
+    padding:240px 10px 10px;
+    margin-right:12px;
+    float:left;
+    font-size:14px;
+    color:#fff;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.tee.last {
+    margin-right:0;
+}
+
+#minecon-banner {
+    display:block;
+    background-color:#ff0;
+    width:630px;
+    height:230px;
+    background:transparent url(/web/20131125102107im_/https://minecraft.net/images/minecon_banner.png) no-repeat;
+    overflow:hidden;
+    text-indent: -1000px;
+    margin-top:26px;
+}
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+#japanesePush {
+    margin:24px 0 48px 0;
+    position:relative;
+}
+#japanesePush section {
+    margin-bottom:0;
+}
+#japanesePush section.left {
+    width:610px;
+}
+#japanesePush h2 {
+    font-weight:bold;
+    font-size:18px;
+    margin-top:0;
+}
+#japanesePush p {
+    font-weight:bold;
+    font-size:12px;
+}
+#hideJapanesePush {
+    font-weight:bold;
+    font-size:12px;
+    position:absolute;
+    top:10px;
+    right:24px;
+}
+
+.emailSuggestion a {
+    font-style:italic;
+}
+.emailSuggestion .domain {
+    font-weight:bold;
+}
+
+.discreet {
+    color:#999;
+}
+
+.discreet a {
+    color:#aaa;
+}
+
+.discreet a:hover {
+    color:#ddd;
+}
+
+#ssoFrame {
+    height:0px;
+    width:0px;
+    font-size:0px;
+    line-height:0px;
+    margin:0;
+    padding:0;
+}
+
+#nasty-message {
+    color:#faa;
+    margin-bottom:2em;
+}
+
+.quote {
+    font-style:italic;
+}
+.quote span {
+    font-style:normal;
+}
+
+.prepaid {
+    background:transparent url(/web/20131125102107im_/https://minecraft.net/images/minecraft_incomm_s.png) no-repeat;
+    padding:0 0 0 95px;
+    min-height:106px;
+}
+
+#prepaid {
+    background:transparent url(/web/20131125102107im_/https://minecraft.net/images/store/minecraft_incomm_l.png) no-repeat right top;
+    padding:0 304px 0 0;
+    min-height:400px;
+}
+
+#prepaid .logo {    
+    display:block;
+    height:80px;
+    line-height:80px;
+}
+
+#prepaid .logo img {
+    vertical-align:middle;
+}
+
+#prepaid .retailer {
+    float:left;
+    margin:20px 80px 20px 0;
+    height:120px;
+    text-align:center;
+}
+
+#prepaid .find_store {
+    background-image: url(/web/20131125102107im_/https://minecraft.net/images/store/find.png);
+    width:98px;
+    height:26px;
+    display:block;
+    margin:12px auto;
+}
+
+#confirm fieldset {    
+    margin:12px 0;
+}
+
+#confirm label {
+    cursor:default;
+    display:block;
+}
+
+#confirm input[type="text"] {
+    width:320px;
+}
+
+.hide {
+    display:none;
+}
+
+#store-frame {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+    /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+
+@media print {
+    * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+        -ms-filter: none !important; }
+    a, a:visited { color: #444 !important; text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; }
+    tr, img { page-break-inside: avoid; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3{ page-break-after: avoid; }
+}
